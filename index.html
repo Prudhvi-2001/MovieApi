@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Movie App</title>
+</head>
+<style type="text/css">
+    .container h4{
+        margin-left: 150px;
+        font-size: 2rem;
+        color: #ffffff;
+        margin-top: 5px;
+    }
+    .mainHeader h1,p{
+        text-align: center;
+        color: #ffffff;
+    }
+    .info{
+        margin-top: -20px;
+        margin-bottom: 25px;
+        color: #8193b2 !important;
+        font-size: 18px !important;
+    }
+</style>
+<body>
+    <div class="container">
+        <h4>MovieApi</h4>      
+    </div>
+    <div class="mainHeader">
+    <h1>Get Your <span id="moviedetails">Favourite Movie</span> Details</h1>
+    <p class="info">Get Info about any Movie</p>
+        
+    </div>
+   
+    <header>
+      
+        <form id="form">
+            <div class="search-container">
+        <input type="text" name="search" placeholder="Search..." class="search-input " id="search">
+        <a href="#" class="search-btn"><i class="fas fa-search"></i>      
+        </a>
+        </form>
+         
+      </div>
+      </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
